@@ -111,6 +111,11 @@
   text-align: center;
 }
 
+/* DevOps & Cloud Infrastructure RTL styles */
+[dir="rtl"] .skill-category:first-child .skill-item:hover {
+  transform: translateX(-5px) translateY(-5px) scale(1.02);
+}
+
 /* Automation & SEO RTL styles */
 [dir="rtl"] .skill-category:nth-last-child(3) .skill-item:hover {
   transform: translateX(-3px) translateY(-3px);

@@ -531,6 +531,74 @@ section {
   transition: width 1s ease;
 }
 
+/* DevOps & Cloud Infrastructure Section Custom Styling */
+.skill-category:first-child {
+  background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(8, 145, 178, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="4"/></g></g></svg>');
+  pointer-events: none;
+}
+
+.skill-category:first-child h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category:first-child .skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category:first-child .skill-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.skill-category:first-child .skill-icon i {
+  color: #67e8f9;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+  transition: all 0.3s ease;
+}
+
+.skill-category:first-child .skill-item:hover .skill-icon i {
+  transform: scale(1.1);
+  color: #a5f3fc;
+}
+
+.skill-category:first-child .skill-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  height: 10px;
+}
+
+.skill-category:first-child .skill-progress {
+  background: linear-gradient(90deg, #67e8f9, #22d3ee);
+  box-shadow: 0 2px 10px rgba(103, 232, 249, 0.4);
+}
+
 /* Automation & SEO Section Custom Styling */
 .skill-category:nth-last-child(3) {
   background: linear-gradient(135deg, #059669 0%, #10b981 100%);
