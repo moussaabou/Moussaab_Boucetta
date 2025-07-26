@@ -9,7 +9,7 @@ const particlesConfig = {
             }
         },
         "color": {
-            "value": ["#6366f1", "#8b5cf6", "#06b6d4"]
+            "value": ["#ff6b6b", "#4ecdc4", "#45b7d1"]
         },
         "shape": {
             "type": "circle",
@@ -49,7 +49,7 @@ const particlesConfig = {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#6366f1",
+            "color": "#ff6b6b",
             "opacity": 0.4,
             "width": 1
         },
