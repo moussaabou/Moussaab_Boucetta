@@ -111,6 +111,19 @@
   text-align: center;
 }
 
+/* Language skills RTL styles */
+[dir="rtl"] .language-item:hover {
+  transform: translateX(-5px);
+}
+
+[dir="rtl"] .language-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .language-level {
+  flex-direction: row-reverse;
+}
+
 /* Mobile adjustments for RTL */
 @media (max-width: 1024px) {
   [dir="rtl"] .timeline-wrapper::before {
