@@ -37,9 +37,11 @@ This is a client-side static website with the following architecture:
 - **Smooth Animations**: Intersection Observer API for scroll-triggered animations
 - **Responsive Navigation**: Mobile-friendly hamburger menu
 - **Contact Form**: Client-side form handling
+- **Skills Showcase**: Comprehensive skills display including AI/ML, automation, and SEO
 - **Timeline Section**: Educational and professional experience timeline
 - **Certifications Display**: Professional certifications showcase with verification links
 - **CV Download**: Dynamic CV generation in HTML format for each language
+- **AI-Enhanced Projects**: Portfolio projects featuring AI, ML, and automation capabilities
 - **Loading Screen**: Enhanced user experience during initialization
 
 ### 3. Technology Stack
