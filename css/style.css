@@ -883,6 +883,84 @@ section {
 
 
 
+/* Automation & SEO Skills Custom Styling */
+.skill-category:nth-child(5) {
+  background: linear-gradient(135deg, #7C3AED 0%, #6d28d9 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+  position: relative;
+}
+
+.skill-category:nth-child(5) h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.skill-category:nth-child(5) .skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.skill-category:nth-child(5) .skill-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.skill-category:nth-child(5) .skill-icon i {
+  color: #c4b5fd;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.skill-category:nth-child(5) .skill-progress {
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
+}
+
+/* Languages Skills Custom Styling */
+.skill-category:nth-child(6) {
+  background: linear-gradient(135deg, #7C3AED 0%, #6d28d9 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+  position: relative;
+}
+
+.skill-category:nth-child(6) h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.skill-category:nth-child(6) .skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.skill-category:nth-child(6) .skill-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.skill-category:nth-child(6) .skill-icon i {
+  color: #c4b5fd;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.skill-category:nth-child(6) .skill-progress {
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
+}
+
 /* Projects Section */
 .projects {
   background-color: var(--surface-color);

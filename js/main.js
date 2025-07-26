@@ -604,6 +604,14 @@ class PortfolioApp {
                     <h3>${currentLang['ai-ml-title']}</h3>
                     <p>Machine Learning, Deep Learning, AI Agents, Chatbots</p>
                 </div>
+                <div class="skill-category">
+                    <h3>${currentLang['automation-seo-title']}</h3>
+                    <p>n8n, SEO, Workflow Automation</p>
+                </div>
+                <div class="skill-category">
+                    <h3>${currentLang['languages-title']}</h3>
+                    <p>${currentLang['english-lang']}, ${currentLang['french-lang']}, ${currentLang['arabic-lang']}</p>
+                </div>
 
             </div>
         </div>
