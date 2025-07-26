@@ -9,7 +9,7 @@ const particlesConfig = {
             }
         },
         "color": {
-            "value": ["#7C3AED", "#6d28d9", "#5b21b6"]
+            "value": ["#1E1B4B", "#312e81", "#3730a3"]
         },
         "shape": {
             "type": "circle",
@@ -49,7 +49,7 @@ const particlesConfig = {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#7C3AED",
+            "color": "#1E1B4B",
             "opacity": 0.4,
             "width": 1
         },
@@ -116,11 +116,11 @@ const particlesConfigDark = {
     "particles": {
         ...particlesConfig.particles,
         "color": {
-            "value": ["#818cf8", "#a78bfa", "#22d3ee"]
+            "value": ["#4338ca", "#6366f1", "#8b5cf6"]
         },
         "line_linked": {
             ...particlesConfig.particles.line_linked,
-            "color": "#818cf8",
+            "color": "#4338ca",
             "opacity": 0.3
         }
     }
@@ -144,18 +144,18 @@ function updateParticlesTheme() {
         const pJS = window.pJSDom[0].pJS;
         
         if (isDarkTheme) {
-            pJS.particles.color.value = ["#818cf8", "#a78bfa", "#22d3ee"];
-            pJS.particles.line_linked.color = "#818cf8";
+            pJS.particles.color.value = ["#4338ca", "#6366f1", "#8b5cf6"];
+            pJS.particles.line_linked.color = "#4338ca";
             pJS.particles.line_linked.opacity = 0.3;
         } else {
-            pJS.particles.color.value = ["#6366f1", "#8b5cf6", "#06b6d4"];
-            pJS.particles.line_linked.color = "#6366f1";
+            pJS.particles.color.value = ["#1E1B4B", "#312e81", "#3730a3"];
+            pJS.particles.line_linked.color = "#1E1B4B";
             pJS.particles.line_linked.opacity = 0.4;
         }
         
         // Update existing particles
         pJS.particles.array.forEach(particle => {
-            const colors = isDarkTheme ? ["#818cf8", "#a78bfa", "#22d3ee"] : ["#6366f1", "#8b5cf6", "#06b6d4"];
+            const colors = isDarkTheme ? ["#4338ca", "#6366f1", "#8b5cf6"] : ["#1E1B4B", "#312e81", "#3730a3"];
             particle.color.value = colors[Math.floor(Math.random() * colors.length)];
         });
     }
