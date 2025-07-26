@@ -22,6 +22,7 @@ class PortfolioApp {
             this.initializeContactForm();
             this.initializeSkillBars();
             this.initializeParticles();
+            this.initializeCVDownload();
             
             // Hide loading screen
             this.hideLoadingScreen();
@@ -471,6 +472,168 @@ class PortfolioApp {
                 console.log('Particles.js loaded successfully');
             });
         }
+    }
+
+    initializeCVDownload() {
+        const downloadButton = document.getElementById('download-cv');
+        if (downloadButton) {
+            downloadButton.addEventListener('click', () => {
+                this.generateAndDownloadCV();
+            });
+        }
+    }
+
+    async generateAndDownloadCV() {
+        const button = document.getElementById('download-cv');
+        const originalContent = button.innerHTML;
+        
+        // Show loading state
+        button.innerHTML = `
+            <i class="fas fa-spinner fa-spin"></i>
+            <span>${this.getTranslation('generating-cv') || 'Generating CV...'}</span>
+        `;
+        button.disabled = true;
+
+        try {
+            // Generate CV content based on current language
+            const cvContent = this.generateCVContent();
+            
+            // Create and download PDF-like HTML content
+            this.downloadHTMLAsFile(cvContent, `Moussaab_Boucetta_CV_${this.currentLanguage.toUpperCase()}.html`);
+            
+        } catch (error) {
+            console.error('Error generating CV:', error);
+            alert(this.getTranslation('cv-error') || 'Error generating CV. Please try again.');
+        } finally {
+            // Restore button
+            setTimeout(() => {
+                button.innerHTML = originalContent;
+                button.disabled = false;
+            }, 2000);
+        }
+    }
+
+    generateCVContent() {
+        const currentLang = this.languages[this.currentLanguage];
+        const isRTL = this.currentLanguage === 'ar';
+        
+        return `<!DOCTYPE html>
+<html lang="${this.currentLanguage}" dir="${isRTL ? 'rtl' : 'ltr'}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${currentLang['hero-name']} - CV</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background: white; 
+            color: #333;
+            direction: ${isRTL ? 'rtl' : 'ltr'};
+        }
+        .cv-container { max-width: 800px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #6366f1; padding-bottom: 20px; }
+        .name { font-size: 2.5em; color: #6366f1; margin-bottom: 10px; }
+        .title { font-size: 1.2em; color: #666; margin-bottom: 15px; }
+        .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .section { margin-bottom: 30px; }
+        .section-title { font-size: 1.4em; color: #6366f1; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
+        .timeline-item { margin-bottom: 20px; padding-left: 20px; border-left: 2px solid #6366f1; }
+        .timeline-date { font-weight: bold; color: #6366f1; }
+        .timeline-title { font-size: 1.1em; font-weight: bold; margin: 5px 0; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .skill-category { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+        .cert-item { background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        @media print { body { margin: 0; } }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1 class="name">${currentLang['hero-name']}</h1>
+            <p class="title">${currentLang['hero-title']}</p>
+            <div class="contact-info">
+                <span>📧 moussaab.boucetta@email.com</span>
+                <span>🔗 linkedin.com/in/moussaab-boucetta</span>
+                <span>👨‍💻 github.com/moussaab-boucetta</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">${currentLang['about-title']}</h2>
+            <p>${currentLang['about-description']}</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">${currentLang['timeline-title']}</h2>
+            <div class="timeline-item">
+                <div class="timeline-date">${currentLang['timeline-date-2']}</div>
+                <div class="timeline-title">${currentLang['timeline-title-2']}</div>
+                <p>${currentLang['timeline-desc-2']}</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">${currentLang['timeline-date-3']}</div>
+                <div class="timeline-title">${currentLang['timeline-title-3']}</div>
+                <p>${currentLang['timeline-desc-3']}</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">${currentLang['timeline-date-4']}</div>
+                <div class="timeline-title">${currentLang['timeline-title-4']}</div>
+                <p>${currentLang['timeline-desc-4']}</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">${currentLang['skills-title']}</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>${currentLang['backend-title']}</h3>
+                    <p>Spring Boot, Django, Node.js, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <h3>${currentLang['frontend-title']}</h3>
+                    <p>React, Angular, Vue.js, HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>${currentLang['devops-title']}</h3>
+                    <p>Docker, Kubernetes, AWS, Azure, CI/CD, Git</p>
+                </div>
+                <div class="skill-category">
+                    <h3>${currentLang['languages-title']}</h3>
+                    <p>${currentLang['lang-arabic']}, ${currentLang['lang-french']}, ${currentLang['lang-english']}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">${currentLang['certifications-title']}</h2>
+            <div class="cert-item">
+                <strong>${currentLang['cert-1-title']}</strong> - ${currentLang['cert-1-issuer']} (${currentLang['cert-1-date']})
+            </div>
+            <div class="cert-item">
+                <strong>${currentLang['cert-2-title']}</strong> - ${currentLang['cert-2-issuer']} (${currentLang['cert-2-date']})
+            </div>
+            <div class="cert-item">
+                <strong>${currentLang['cert-3-title']}</strong> - ${currentLang['cert-3-issuer']} (${currentLang['cert-3-date']})
+            </div>
+        </div>
+    </div>
+</body>
+</html>`;
+    }
+
+    downloadHTMLAsFile(content, filename) {
+        const blob = new Blob([content], { type: 'text/html' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
     }
 }
 

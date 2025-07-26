@@ -83,6 +83,45 @@
   flex-direction: row-reverse;
 }
 
+/* Timeline RTL styles */
+[dir="rtl"] .timeline-wrapper::before {
+  left: auto;
+  right: 30px;
+}
+
+[dir="rtl"] .timeline-item {
+  padding-left: 0;
+  padding-right: 80px;
+}
+
+[dir="rtl"] .timeline-icon {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .timeline-content::before {
+  left: auto;
+  right: -10px;
+  border-right: none;
+  border-left: 10px solid var(--background-color);
+}
+
+/* Certifications RTL styles */
+[dir="rtl"] .certification-card {
+  text-align: center;
+}
+
+/* Mobile adjustments for RTL */
+@media (max-width: 1024px) {
+  [dir="rtl"] .timeline-wrapper::before {
+    right: 20px;
+  }
+  
+  [dir="rtl"] .timeline-item {
+    padding-right: 60px;
+  }
+}
+
 /* Form label positioning for RTL */
 [dir="rtl"] .form-group label {
   left: auto;

@@ -1,7 +1,7 @@
 # Portfolio Website - Moussaab Boucetta
 
 ## Overview
-This is a modern, responsive portfolio website for a software engineer built with vanilla HTML, CSS, and JavaScript. The site features animated particles background, multi-language support (English and Arabic with RTL), dark/light theme switching, and smooth animations throughout.
+This is a modern, responsive portfolio website for a software engineer built with vanilla HTML, CSS, and JavaScript. The site features animated particles background, multi-language support (English, French, and Arabic with RTL), dark/light theme switching, smooth animations, timeline section for education/experience, certifications showcase, and downloadable CV functionality.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -31,12 +31,15 @@ This is a client-side static website with the following architecture:
 ```
 
 ### 2. Core Features
-- **Multi-language Support**: English and Arabic with automatic RTL layout switching
+- **Multi-language Support**: English, French, and Arabic with automatic RTL layout switching
 - **Theme System**: Light/dark theme with CSS custom properties
 - **Animated Background**: Particles.js integration for interactive background
 - **Smooth Animations**: Intersection Observer API for scroll-triggered animations
 - **Responsive Navigation**: Mobile-friendly hamburger menu
 - **Contact Form**: Client-side form handling
+- **Timeline Section**: Educational and professional experience timeline
+- **Certifications Display**: Professional certifications showcase with verification links
+- **CV Download**: Dynamic CV generation in HTML format for each language
 - **Loading Screen**: Enhanced user experience during initialization
 
 ### 3. Technology Stack

@@ -23,3 +23,7 @@ author = "agent"
 task = "shell.exec"
 args = "python -m http.server 5000"
 waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
