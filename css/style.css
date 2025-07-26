@@ -4,7 +4,7 @@
   --primary-color: #1E1B4B;
   --secondary-color: #312e81;
   --accent-color: #3730a3;
-  --background-color: #e5e0e0;
+  --background-color: #ffffff;
   --surface-color: #f8fafc;
   --text-primary: #1E1B4B;
   --text-secondary: #312e81;
@@ -977,10 +977,10 @@ section {
 [data-theme="dark"] .skill-category:nth-child(4),
 [data-theme="dark"] .skill-category:nth-child(5),
 [data-theme="dark"] .skill-category:nth-child(6) {
-  background: #FF172A !important;
+  background: #475569 !important;
   color: white !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 10px 30px rgba(255, 23, 42, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(71, 85, 105, 0.4) !important;
 }
 
 [data-theme="dark"] .skill-category h3 {
