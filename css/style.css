@@ -4,7 +4,7 @@
   --primary-color: #1E1B4B;
   --secondary-color: #312e81;
   --accent-color: #3730a3;
-  --background-color: #ffffff;
+  --background-color: #e5e0e0;
   --surface-color: #f8fafc;
   --text-primary: #1E1B4B;
   --text-secondary: #312e81;
@@ -133,7 +133,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgb(227, 227, 227, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
@@ -968,6 +968,45 @@ section {
 
 .skill-category:nth-child(6) .skill-progress {
   background: linear-gradient(90deg, #1E1B4B, #312e81);
+}
+
+/* Dark Theme Skill Section Styling */
+[data-theme="dark"] .skill-category:first-child,
+[data-theme="dark"] .skill-category:nth-child(2),
+[data-theme="dark"] .skill-category:nth-child(3),
+[data-theme="dark"] .skill-category:nth-child(4),
+[data-theme="dark"] .skill-category:nth-child(5),
+[data-theme="dark"] .skill-category:nth-child(6) {
+  background: #FF172A !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 10px 30px rgba(255, 23, 42, 0.4) !important;
+}
+
+[data-theme="dark"] .skill-category h3 {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+[data-theme="dark"] .skill-category .skill-item {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .skill-category .skill-item:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3) !important;
+}
+
+[data-theme="dark"] .skill-category .skill-icon i {
+  color: white !important;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)) !important;
+}
+
+[data-theme="dark"] .skill-category .skill-progress {
+  background: linear-gradient(90deg, #ffffff, #e5e7eb) !important;
 }
 
 /* Projects Section */
