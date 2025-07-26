@@ -686,7 +686,7 @@ section {
 
 /* DevOps & Cloud Infrastructure Section Custom Styling */
 .skill-category:first-child {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -745,7 +745,7 @@ section {
 
 /* Backend Skills Custom Styling */
 .skill-category:nth-child(2) {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -808,7 +808,7 @@ section {
 
 /* Frontend Skills Custom Styling */
 .skill-category:nth-child(3) {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -855,7 +855,7 @@ section {
 
 /* AI & ML Skills Custom Styling */
 .skill-category:nth-child(4) {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -894,7 +894,7 @@ section {
 
 /* Automation & SEO Skills Custom Styling */
 .skill-category:nth-child(5) {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -933,7 +933,7 @@ section {
 
 /* Languages Skills Custom Styling */
 .skill-category:nth-child(6) {
-  background: #F9FAFB;
+  background: #F1F5F9;
   color: #1f2937;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
