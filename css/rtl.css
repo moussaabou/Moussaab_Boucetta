@@ -116,6 +116,16 @@
   transform: translateX(-5px) translateY(-5px) scale(1.02);
 }
 
+/* Backend Skills RTL styles */
+[dir="rtl"] .skill-category:nth-child(2) .skill-item:hover {
+  transform: translateX(-10px) translateY(-2px);
+}
+
+/* Frontend Skills RTL styles */
+[dir="rtl"] .skill-category:nth-child(3) .skill-item:hover {
+  transform: scale(1.03);
+}
+
 /* Automation & SEO RTL styles */
 [dir="rtl"] .skill-category:nth-last-child(3) .skill-item:hover {
   transform: translateX(-3px) translateY(-3px);

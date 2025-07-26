@@ -599,6 +599,135 @@ section {
   box-shadow: 0 2px 10px rgba(103, 232, 249, 0.4);
 }
 
+/* Backend Skills Custom Styling */
+.skill-category:nth-child(2) {
+  background: linear-gradient(135deg, #7c2d12 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(124, 45, 18, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.02) 10px,
+    rgba(255, 255, 255, 0.02) 20px
+  );
+  animation: movePattern 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes movePattern {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.skill-category:nth-child(2) h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category:nth-child(2) .skill-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.skill-category:nth-child(2) .skill-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(10px) translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.skill-category:nth-child(2) .skill-icon i {
+  color: #fca5a5;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  transition: all 0.3s ease;
+}
+
+.skill-category:nth-child(2) .skill-item:hover .skill-icon i {
+  color: #fecaca;
+  transform: rotate(5deg) scale(1.1);
+}
+
+.skill-category:nth-child(2) .skill-bar {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.skill-category:nth-child(2) .skill-progress {
+  background: linear-gradient(90deg, #fca5a5, #f87171);
+  box-shadow: 0 0 15px rgba(248, 113, 113, 0.5);
+  border-radius: 8px;
+}
+
+/* Frontend Skills Custom Styling */
+.skill-category:nth-child(3) {
+  background: linear-gradient(135deg, #581c87 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(88, 28, 135, 0.3);
+  position: relative;
+}
+
+.skill-category:nth-child(3) h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.skill-category:nth-child(3) .skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.skill-category:nth-child(3) .skill-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.skill-category:nth-child(3) .skill-icon i {
+  color: #c4b5fd;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.skill-category:nth-child(3) .skill-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  height: 10px;
+}
+
+.skill-category:nth-child(3) .skill-progress {
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
+}
+
 /* Automation & SEO Section Custom Styling */
 .skill-category:nth-last-child(3) {
   background: linear-gradient(135deg, #059669 0%, #10b981 100%);
