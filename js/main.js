@@ -534,14 +534,14 @@ class PortfolioApp {
             direction: ${isRTL ? 'rtl' : 'ltr'};
         }
         .cv-container { max-width: 800px; margin: 0 auto; }
-        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2563EB; padding-bottom: 20px; }
-        .name { font-size: 2.5em; color: #2563EB; margin-bottom: 10px; }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #7C3AED; padding-bottom: 20px; }
+        .name { font-size: 2.5em; color: #7C3AED; margin-bottom: 10px; }
         .title { font-size: 1.2em; color: #666; margin-bottom: 15px; }
         .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .section { margin-bottom: 30px; }
-        .section-title { font-size: 1.4em; color: #2563EB; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
-        .timeline-item { margin-bottom: 20px; padding-left: 20px; border-left: 2px solid #2563EB; }
-        .timeline-date { font-weight: bold; color: #2563EB; }
+        .section-title { font-size: 1.4em; color: #7C3AED; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
+        .timeline-item { margin-bottom: 20px; padding-left: 20px; border-left: 2px solid #7C3AED; }
+        .timeline-date { font-weight: bold; color: #7C3AED; }
         .timeline-title { font-size: 1.1em; font-weight: bold; margin: 5px 0; }
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
         .skill-category { background: #f8f9fa; padding: 15px; border-radius: 5px; }

@@ -1,13 +1,13 @@
 /* CSS Custom Properties */
 :root {
   /* Light Theme Colors */
-  --primary-color: #2563EB;
-  --secondary-color: #1d4ed8;
-  --accent-color: #1e40af;
+  --primary-color: #7C3AED;
+  --secondary-color: #6d28d9;
+  --accent-color: #5b21b6;
   --background-color: #ffffff;
   --surface-color: #f8fafc;
-  --text-primary: #2563eb;
-  --text-secondary: #1d4ed8;
+  --text-primary: #7c3aed;
+  --text-secondary: #6d28d9;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
   --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -27,9 +27,9 @@
 
 /* Dark Theme Colors */
 [data-theme="dark"] {
-  --primary-color: #3b82f6;
-  --secondary-color: #2563eb;
-  --accent-color: #1d4ed8;
+  --primary-color: #a855f7;
+  --secondary-color: #7c3aed;
+  --accent-color: #6d28d9;
   --background-color: #1e293b;
   --surface-color: #334155;
   --text-primary: #f1f5f9;
@@ -60,9 +60,9 @@ body {
 }
 
 .dark-theme {
-  --primary-color: #3b82f6;
-  --secondary-color: #2563eb;
-  --accent-color: #1d4ed8;
+  --primary-color: #a855f7;
+  --secondary-color: #7c3aed;
+  --accent-color: #6d28d9;
   --background-color: #1e293b;
   --surface-color: #334155;
   --text-primary: #f1f5f9;
@@ -478,8 +478,8 @@ section {
   background-color: var(--surface-color);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid rgba(37, 99, 235, 0.15);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -492,20 +492,20 @@ section {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2563EB, #1d4ed8, #1e40af);
+  background: linear-gradient(90deg, #7C3AED, #6d28d9, #5b21b6);
   border-radius: 12px 12px 0 0;
 }
 
 .skill-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
-  border-color: rgba(37, 99, 235, 0.25);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
+  border-color: rgba(124, 58, 237, 0.25);
 }
 
 .skill-category h3 {
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
-  color: #2563EB;
+  color: #7C3AED;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -520,7 +520,7 @@ section {
   transform: translateX(-50%);
   width: 40px;
   height: 2px;
-  background: linear-gradient(90deg, #2563EB, #1e40af);
+  background: linear-gradient(90deg, #7C3AED, #5b21b6);
   border-radius: 1px;
 }
 
@@ -535,21 +535,21 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.8rem;
-  background: rgba(37, 99, 235, 0.02);
+  background: rgba(124, 58, 237, 0.02);
   border-radius: 8px;
-  border: 1px solid rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.08);
   transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-  background: rgba(37, 99, 235, 0.05);
+  background: rgba(124, 58, 237, 0.05);
   transform: translateX(3px);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(124, 58, 237, 0.15);
 }
 
 .skill-item > span {
   font-weight: 500;
-  color: #2563EB;
+  color: #7C3AED;
   font-size: 0.95rem;
 }
 
@@ -561,21 +561,21 @@ section {
 
 .skill-icon i {
   font-size: 1.3rem;
-  color: #2563EB;
+  color: #7C3AED;
   padding: 4px;
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(124, 58, 237, 0.08);
   border-radius: 6px;
   transition: all 0.3s ease;
 }
 
 .skill-item:hover .skill-icon i {
-  background: rgba(37, 99, 235, 0.12);
+  background: rgba(124, 58, 237, 0.12);
   transform: scale(1.05);
 }
 
 .skill-bar {
   height: 8px;
-  background-color: rgba(37, 99, 235, 0.1);
+  background-color: rgba(124, 58, 237, 0.1);
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -583,7 +583,7 @@ section {
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #2563EB, #1d4ed8, #1e40af);
+  background: linear-gradient(90deg, #7C3AED, #6d28d9, #5b21b6);
   border-radius: 4px;
   width: 0%;
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -686,10 +686,10 @@ section {
 
 /* DevOps & Cloud Infrastructure Section Custom Styling */
 .skill-category:first-child {
-  background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #7C3AED 0%, #6d28d9 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -731,14 +731,14 @@ section {
 }
 
 .skill-category:first-child .skill-icon i {
-  color: #7dd3fc;
+  color: #c4b5fd;
   filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
   transition: all 0.3s ease;
 }
 
 .skill-category:first-child .skill-item:hover .skill-icon i {
   transform: scale(1.1);
-  color: #a5f3fc;
+  color: #ddd6fe;
 }
 
 .skill-category:first-child .skill-bar {
@@ -748,16 +748,16 @@ section {
 }
 
 .skill-category:first-child .skill-progress {
-  background: linear-gradient(90deg, #7dd3fc, #38bdf8);
-  box-shadow: 0 2px 10px rgba(125, 211, 252, 0.4);
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
+  box-shadow: 0 2px 10px rgba(196, 181, 253, 0.4);
 }
 
 /* Backend Skills Custom Styling */
 .skill-category:nth-child(2) {
-  background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #7C3AED 0%, #5b21b6 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -813,13 +813,13 @@ section {
 }
 
 .skill-category:nth-child(2) .skill-icon i {
-  color: #7dd3fc;
+  color: #c4b5fd;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
   transition: all 0.3s ease;
 }
 
 .skill-category:nth-child(2) .skill-item:hover .skill-icon i {
-  color: #a5f3fc;
+  color: #ddd6fe;
   transform: rotate(5deg) scale(1.1);
 }
 
@@ -831,17 +831,17 @@ section {
 }
 
 .skill-category:nth-child(2) .skill-progress {
-  background: linear-gradient(90deg, #7dd3fc, #38bdf8);
-  box-shadow: 0 0 15px rgba(125, 211, 252, 0.5);
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
+  box-shadow: 0 0 15px rgba(196, 181, 253, 0.5);
   border-radius: 8px;
 }
 
 /* Frontend Skills Custom Styling */
 .skill-category:nth-child(3) {
-  background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #7C3AED 0%, #6d28d9 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
   position: relative;
 }
 
@@ -867,7 +867,7 @@ section {
 }
 
 .skill-category:nth-child(3) .skill-icon i {
-  color: #7dd3fc;
+  color: #c4b5fd;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
@@ -878,7 +878,7 @@ section {
 }
 
 .skill-category:nth-child(3) .skill-progress {
-  background: linear-gradient(90deg, #7dd3fc, #38bdf8);
+  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
 }
 
 
