@@ -1,13 +1,13 @@
 /* CSS Custom Properties */
 :root {
   /* Light Theme Colors */
-  --primary-color: #1E1B4B;
-  --secondary-color: #4338ca;
-  --accent-color: #7c3aed;
+  --primary-color: #0F172A;
+  --secondary-color: #1e293b;
+  --accent-color: #334155;
   --background-color: #ffffff;
   --surface-color: #f8fafc;
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
   --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -27,15 +27,15 @@
 
 /* Dark Theme Colors */
 [data-theme="dark"] {
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
-  --accent-color: #a78bfa;
-  --background-color: #1E1B4B;
-  --surface-color: #312e81;
+  --primary-color: #64748b;
+  --secondary-color: #475569;
+  --accent-color: #334155;
+  --background-color: #0F172A;
+  --surface-color: #1e293b;
   --text-primary: #f1f5f9;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --border-color: #4c1d95;
+  --border-color: #334155;
 }
 
 /* Global Styles */
@@ -60,15 +60,15 @@ body {
 }
 
 .dark-theme {
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
-  --accent-color: #a78bfa;
-  --background-color: #1E1B4B;
-  --surface-color: #312e81;
+  --primary-color: #64748b;
+  --secondary-color: #475569;
+  --accent-color: #334155;
+  --background-color: #0F172A;
+  --surface-color: #1e293b;
   --text-primary: #f1f5f9;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --border-color: #4c1d95;
+  --border-color: #334155;
 }
 
 /* Container */
@@ -478,8 +478,8 @@ section {
   background-color: var(--surface-color);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid rgba(30, 27, 75, 0.15);
-  box-shadow: 0 4px 12px rgba(30, 27, 75, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -492,20 +492,20 @@ section {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #1E1B4B, #4c1d95, #7c3aed);
+  background: linear-gradient(90deg, #0F172A, #1e293b, #334155);
   border-radius: 12px 12px 0 0;
 }
 
 .skill-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(30, 27, 75, 0.15);
-  border-color: rgba(30, 27, 75, 0.25);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  border-color: rgba(15, 23, 42, 0.25);
 }
 
 .skill-category h3 {
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
-  color: #1E1B4B;
+  color: #0F172A;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -520,7 +520,7 @@ section {
   transform: translateX(-50%);
   width: 40px;
   height: 2px;
-  background: linear-gradient(90deg, #1E1B4B, #7c3aed);
+  background: linear-gradient(90deg, #0F172A, #334155);
   border-radius: 1px;
 }
 
@@ -535,21 +535,21 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.8rem;
-  background: rgba(30, 27, 75, 0.02);
+  background: rgba(15, 23, 42, 0.02);
   border-radius: 8px;
-  border: 1px solid rgba(30, 27, 75, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.08);
   transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-  background: rgba(30, 27, 75, 0.05);
+  background: rgba(15, 23, 42, 0.05);
   transform: translateX(3px);
-  border-color: rgba(30, 27, 75, 0.15);
+  border-color: rgba(15, 23, 42, 0.15);
 }
 
 .skill-item > span {
   font-weight: 500;
-  color: #1E1B4B;
+  color: #0F172A;
   font-size: 0.95rem;
 }
 
@@ -561,21 +561,21 @@ section {
 
 .skill-icon i {
   font-size: 1.3rem;
-  color: #1E1B4B;
+  color: #0F172A;
   padding: 4px;
-  background: rgba(30, 27, 75, 0.08);
+  background: rgba(15, 23, 42, 0.08);
   border-radius: 6px;
   transition: all 0.3s ease;
 }
 
 .skill-item:hover .skill-icon i {
-  background: rgba(30, 27, 75, 0.12);
+  background: rgba(15, 23, 42, 0.12);
   transform: scale(1.05);
 }
 
 .skill-bar {
   height: 8px;
-  background-color: rgba(30, 27, 75, 0.1);
+  background-color: rgba(15, 23, 42, 0.1);
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -583,7 +583,7 @@ section {
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #1E1B4B, #4c1d95, #7c3aed);
+  background: linear-gradient(90deg, #0F172A, #1e293b, #334155);
   border-radius: 4px;
   width: 0%;
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -686,10 +686,10 @@ section {
 
 /* DevOps & Cloud Infrastructure Section Custom Styling */
 .skill-category:first-child {
-  background: linear-gradient(135deg, #1E1B4B 0%, #312e81 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(30, 27, 75, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -731,14 +731,14 @@ section {
 }
 
 .skill-category:first-child .skill-icon i {
-  color: #8b5cf6;
+  color: #64748b;
   filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
   transition: all 0.3s ease;
 }
 
 .skill-category:first-child .skill-item:hover .skill-icon i {
   transform: scale(1.1);
-  color: #a78bfa;
+  color: #94a3b8;
 }
 
 .skill-category:first-child .skill-bar {
@@ -748,16 +748,16 @@ section {
 }
 
 .skill-category:first-child .skill-progress {
-  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
-  box-shadow: 0 2px 10px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(90deg, #64748b, #475569);
+  box-shadow: 0 2px 10px rgba(100, 116, 139, 0.4);
 }
 
 /* Backend Skills Custom Styling */
 .skill-category:nth-child(2) {
-  background: linear-gradient(135deg, #1E1B4B 0%, #4c1d95 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(30, 27, 75, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -813,13 +813,13 @@ section {
 }
 
 .skill-category:nth-child(2) .skill-icon i {
-  color: #c4b5fd;
+  color: #cbd5e1;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
   transition: all 0.3s ease;
 }
 
 .skill-category:nth-child(2) .skill-item:hover .skill-icon i {
-  color: #ddd6fe;
+  color: #e2e8f0;
   transform: rotate(5deg) scale(1.1);
 }
 
@@ -831,17 +831,17 @@ section {
 }
 
 .skill-category:nth-child(2) .skill-progress {
-  background: linear-gradient(90deg, #c4b5fd, #a78bfa);
-  box-shadow: 0 0 15px rgba(167, 139, 250, 0.5);
+  background: linear-gradient(90deg, #cbd5e1, #94a3b8);
+  box-shadow: 0 0 15px rgba(148, 163, 184, 0.5);
   border-radius: 8px;
 }
 
 /* Frontend Skills Custom Styling */
 .skill-category:nth-child(3) {
-  background: linear-gradient(135deg, #1E1B4B 0%, #6366f1 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #475569 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(30, 27, 75, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
   position: relative;
 }
 
@@ -867,7 +867,7 @@ section {
 }
 
 .skill-category:nth-child(3) .skill-icon i {
-  color: #818cf8;
+  color: #94a3b8;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
@@ -878,15 +878,15 @@ section {
 }
 
 .skill-category:nth-child(3) .skill-progress {
-  background: linear-gradient(90deg, #818cf8, #6366f1);
+  background: linear-gradient(90deg, #94a3b8, #475569);
 }
 
 /* Automation & SEO Section Custom Styling */
 .skill-category:nth-last-child(3) {
-  background: linear-gradient(135deg, #1E1B4B 0%, #4338ca 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(30, 27, 75, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
 }
 
 .skill-category:nth-last-child(3) h3 {
@@ -910,7 +910,7 @@ section {
 }
 
 .skill-category:nth-last-child(3) .skill-icon i {
-  color: #6366f1;
+  color: #64748b;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
@@ -919,15 +919,15 @@ section {
 }
 
 .skill-category:nth-last-child(3) .skill-progress {
-  background: linear-gradient(90deg, #6366f1, #4338ca);
+  background: linear-gradient(90deg, #64748b, #1e293b);
 }
 
 /* Language Skills Custom Styling */
 .skill-category:nth-last-child(2) {
-  background: linear-gradient(135deg, #1E1B4B 0%, #581c87 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
   color: white;
   border: none;
-  box-shadow: 0 10px 30px rgba(30, 27, 75, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
 }
 
 .skill-category:nth-last-child(2) h3 {
