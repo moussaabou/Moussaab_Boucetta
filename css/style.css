@@ -531,11 +531,53 @@ section {
   transition: width 1s ease;
 }
 
-/* Language Skills Custom Styling */
-.skill-category:nth-last-child(2) {
-  background: linear-gradient(135deg, #1E1B4B 0%, #4c1d95 100%);
+/* Automation & SEO Section Custom Styling */
+.skill-category:nth-last-child(3) {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   color: white;
   border: none;
+  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.3);
+}
+
+.skill-category:nth-last-child(3) h3 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.skill-category:nth-last-child(3) .skill-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.skill-category:nth-last-child(3) .skill-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+.skill-category:nth-last-child(3) .skill-icon i {
+  color: #34d399;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.skill-category:nth-last-child(3) .skill-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-category:nth-last-child(3) .skill-progress {
+  background: linear-gradient(90deg, #34d399, #10b981);
+}
+
+/* Language Skills Custom Styling */
+.skill-category:nth-last-child(2) {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
 }
 
 .skill-category:nth-last-child(2) h3 {

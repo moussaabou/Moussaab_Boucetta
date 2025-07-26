@@ -111,6 +111,11 @@
   text-align: center;
 }
 
+/* Automation & SEO RTL styles */
+[dir="rtl"] .skill-category:nth-last-child(3) .skill-item:hover {
+  transform: translateX(-3px) translateY(-3px);
+}
+
 /* Language skills RTL styles */
 [dir="rtl"] .language-item:hover {
   transform: translateX(-5px);
