@@ -169,6 +169,15 @@
   right: 0.75rem;
 }
 
+/* Enhanced Skills Section RTL */
+[dir="rtl"] .skill-item:hover {
+  transform: translateX(-5px);
+}
+
+[dir="rtl"] .skill-icon {
+  flex-direction: row-reverse;
+}
+
 /* Navigation link after pseudo-element for RTL */
 [dir="rtl"] .nav-link::after {
   left: auto;
