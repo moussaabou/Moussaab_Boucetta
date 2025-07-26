@@ -1,0 +1,229 @@
+/* RTL Support for Arabic Language */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .nav-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-menu {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-controls {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .language-switcher {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-buttons {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .about-content {
+  grid-template-columns: 2fr 1fr;
+}
+
+[dir="rtl"] .hobbies-list {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hobby-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .skill-icon {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .project-tech {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .project-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .project-link {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .article-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-content {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+[dir="rtl"] .social-link {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-link:hover {
+  transform: translateX(-5px);
+}
+
+[dir="rtl"] .footer-content {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-right {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .success-content {
+  flex-direction: row-reverse;
+}
+
+/* Form label positioning for RTL */
+[dir="rtl"] .form-group label {
+  left: auto;
+  right: 1rem;
+}
+
+[dir="rtl"] .form-group input:focus + label,
+[dir="rtl"] .form-group input:not(:placeholder-shown) + label,
+[dir="rtl"] .form-group textarea:focus + label,
+[dir="rtl"] .form-group textarea:not(:placeholder-shown) + label {
+  left: auto;
+  right: 0.75rem;
+}
+
+/* Navigation link after pseudo-element for RTL */
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+/* Section title after pseudo-element for RTL */
+[dir="rtl"] .section-title::after {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* Hero scroll indicator for RTL */
+[dir="rtl"] .hero-scroll {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* Mobile menu for RTL */
+@media (max-width: 768px) {
+  [dir="rtl"] .nav-menu {
+    left: auto;
+    right: -100%;
+  }
+  
+  [dir="rtl"] .nav-menu.active {
+    right: 0;
+  }
+}
+
+/* Typography adjustments for Arabic */
+[dir="rtl"] .hero-name {
+  font-family: 'Amiri', serif, var(--font-heading);
+}
+
+[dir="rtl"] .section-title {
+  font-family: 'Amiri', serif, var(--font-heading);
+}
+
+/* Spacing adjustments for Arabic text */
+[dir="rtl"] p,
+[dir="rtl"] .about-description,
+[dir="rtl"] .hero-quote,
+[dir="rtl"] .article-excerpt {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Number and date formatting for RTL */
+[dir="rtl"] .article-date {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Icon positioning adjustments for RTL */
+[dir="rtl"] .hobby-item i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .skill-icon i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .social-link i {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .project-link i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .success-content i {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+/* Button icon positioning for RTL */
+[dir="rtl"] .btn i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Scroll indicator animation for RTL */
+@keyframes bounceRTL {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(50%) translateY(0);
+  }
+  40% {
+    transform: translateX(50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(50%) translateY(-5px);
+  }
+}
+
+[dir="rtl"] .hero-scroll {
+  animation: bounceRTL 2s infinite;
+}
+
+/* Form validation messages for RTL */
+[dir="rtl"] .form-error {
+  text-align: right;
+}
+
+/* Tech tags alignment for RTL */
+[dir="rtl"] .tech-tag {
+  text-align: center;
+}
+
+/* Language level stars for RTL */
+[dir="rtl"] .language-level {
+  flex-direction: row-reverse;
+}
+
+/* Grid adjustments for RTL on mobile */
+@media (max-width: 1024px) {
+  [dir="rtl"] .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  [dir="rtl"] .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
