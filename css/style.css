@@ -883,47 +883,6 @@ section {
 
 
 
-/* Technology-specific Icon Colors */
-.spring-icon {
-  color: #6DB33F !important;
-  background: rgba(109, 179, 63, 0.1) !important;
-}
-
-.skill-item:hover .spring-icon {
-  background: rgba(109, 179, 63, 0.2) !important;
-  color: #6DB33F !important;
-}
-
-.django-icon {
-  color: #092E20 !important;
-  background: rgba(9, 46, 32, 0.1) !important;
-}
-
-.skill-item:hover .django-icon {
-  background: rgba(9, 46, 32, 0.2) !important;
-  color: #092E20 !important;
-}
-
-.react-icon {
-  color: #61DAFB !important;
-  background: rgba(97, 218, 251, 0.1) !important;
-}
-
-.skill-item:hover .react-icon {
-  background: rgba(97, 218, 251, 0.2) !important;
-  color: #61DAFB !important;
-}
-
-.angular-icon {
-  color: #DD0031 !important;
-  background: rgba(221, 0, 49, 0.1) !important;
-}
-
-.skill-item:hover .angular-icon {
-  background: rgba(221, 0, 49, 0.2) !important;
-  color: #DD0031 !important;
-}
-
 /* Projects Section */
 .projects {
   background-color: var(--surface-color);
