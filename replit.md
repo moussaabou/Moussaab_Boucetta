@@ -6,6 +6,9 @@ This is a modern, responsive portfolio website for a software engineer built wit
 ## User Preferences
 Preferred communication style: Simple, everyday language.
 
+## User Information
+- Master's Degree: Computer Science (Software Engineering), University Constantine 2 (2021-2023)
+
 ## System Architecture
 This is a client-side static website with the following architecture:
 - **Frontend Only**: Pure HTML/CSS/JavaScript with no backend required
