@@ -8,6 +8,7 @@ Preferred communication style: Simple, everyday language.
 
 ## User Information
 - Master's Degree: Computer Science (Software Engineering), University Constantine 2 (2021-2023)
+- Bachelor's Degree: Computer Science, University Constantine 2 (2018-2021)
 
 ## System Architecture
 This is a client-side static website with the following architecture:
