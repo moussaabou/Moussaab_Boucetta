@@ -38,7 +38,7 @@ Aucune installation supplémentaire n’est requise.
 ## Auteur
 
 [Moussaab Boucetta](https://www.linkedin.com/in/ton-profil)
-Contact : ton.email@example.com
+Contact : moussaabboucetta25@gmail.com
 
 ## Licence
 
