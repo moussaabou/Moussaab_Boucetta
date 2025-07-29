@@ -591,11 +591,12 @@ class PortfolioApp {
                 <div class="timeline-title">${currentLang['timeline-title-2']}</div>
                 <p>${currentLang['timeline-desc-2']}</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">${currentLang['timeline-date-3']}</div>
-                <div class="timeline-title">${currentLang['timeline-title-3']}</div>
-                <p>${currentLang['timeline-desc-3']}</p>
+              <div class="timeline-item">
+                <div class="timeline-date">${currentLang['timeline-date-1']}</div>
+                <div class="timeline-title">${currentLang['timeline-title-1']}</div>
+                <p>${currentLang['timeline-desc-1']}</p>
             </div>
+        </div>
             <div class="timeline-item">
                 <div class="timeline-date">${currentLang['timeline-date-5']}</div>
                 <div class="timeline-title">${currentLang['timeline-title-5']}</div>
@@ -608,15 +609,15 @@ class PortfolioApp {
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>${currentLang['backend-title']}</h3>
-                    <p>Spring Boot, Django, Node.js, PostgreSQL, MongoDB</p>
+                    <p>Spring Boot, Django,  PostgreSQL</p>
                 </div>
                 <div class="skill-category">
                     <h3>${currentLang['frontend-title']}</h3>
-                    <p>React, Angular, Vue.js, HTML5, CSS3, JavaScript</p>
+                    <p>React, Angular, HTML5, CSS3, JavaScript</p>
                 </div>
                 <div class="skill-category">
                     <h3>${currentLang['devops-title']}</h3>
-                    <p>Docker, Kubernetes, AWS, Azure, CI/CD, Git</p>
+                    <p>Docker, Kubernetes, AWS, Azure, CI/CD, Git, Agile method</p>
                 </div>
                 <div class="skill-category">
                     <h3>${currentLang['ai-ml-title']}</h3>
@@ -637,13 +638,16 @@ class PortfolioApp {
         <div class="section">
             <h2 class="section-title">${currentLang['certifications-title']}</h2>
             <div class="cert-item">
-                <strong>${currentLang['cert-1-title']}</strong> - ${currentLang['cert-1-issuer']} (${currentLang['cert-1-date']})
+                <strong>${currentLang['cert-data-science-title']}</strong> - ${currentLang['cert-data-science-issuer']} (${currentLang['cert-data-science-date']})
             </div>
             <div class="cert-item">
-                <strong>${currentLang['cert-2-title']}</strong> - ${currentLang['cert-2-issuer']} (${currentLang['cert-2-date']})
+                <strong>${currentLang['cert-cloud-computing-title']}</strong> - ${currentLang['cert-cloud-computing-issuer']} (${currentLang['cert-cloud-computing-date']})
             </div>
             <div class="cert-item">
-                <strong>${currentLang['cert-3-title']}</strong> - ${currentLang['cert-3-issuer']} (${currentLang['cert-3-date']})
+                <strong>${currentLang['cert-kubernetes-deploy-title']}</strong> - ${currentLang['cert-kubernetes-deploy-issuer']} (${currentLang['cert-kubernetes-deploy-date']})
+            </div>
+              <div class="cert-item">
+                <strong>${currentLang['cert-kubernetes-google-title']}</strong> - ${currentLang['cert-kubernetes-google-issuer']} (${currentLang['cert-kubernetes-google-date']})
             </div>
         </div>
     </div>
