@@ -574,8 +574,8 @@ class PortfolioApp {
             <p class="title">${currentLang['hero-title']}</p>
             <div class="contact-info">
                 <span>📧 moussaabboucetta25@gmail.com </span>
-                <span>🔗 https://www.linkedin.com/in/moussaab-boucetta </span>
-                <span>👨‍💻 https://github.com/moussaabou </span>
+                <span>🔗 linkedin.com/in/moussaab-boucetta </span>
+                <span>👨‍💻 github.com/moussaabou </span>
             </div>
         </div>
 
