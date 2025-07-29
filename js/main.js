@@ -165,9 +165,27 @@ class PortfolioApp {
                     element.textContent = translation;
                 }
             } else {
-                console.warn(`Translation not found for key: ${key} in language: ${this.currentLanguage}`);
+                // Don't show warning for missing translations to reduce console noise
+                // console.warn(`Translation not found for key: ${key} in language: ${this.currentLanguage}`);
             }
         });
+        
+        // Add visual feedback for language change
+        this.addLanguageChangeFeedback();
+    }
+    
+    addLanguageChangeFeedback() {
+        // Add a brief visual feedback when language changes
+        const body = document.body;
+        body.style.transition = 'all 0.3s ease';
+        
+        // Add a subtle animation class
+        body.classList.add('language-changed');
+        
+        // Remove the class after animation
+        setTimeout(() => {
+            body.classList.remove('language-changed');
+        }, 300);
     }
 
     initializeNavigation() {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .lang-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .test-content {
+            margin-top: 20px;
+        }
+        [data-lang] {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Language Switching Test</h1>
+        
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang-code="en">EN</button>
+            <button class="lang-btn" data-lang-code="fr">FR</button>
+            <button class="lang-btn" data-lang-code="ar">AR</button>
+        </div>
+        
+        <div class="test-content">
+            <h2 data-lang="test-title">Language Test Page</h2>
+            <p data-lang="test-description">This is a test page to verify that language switching works correctly.</p>
+            <p data-lang="test-instructions">Click the language buttons above to change the language of this content.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple language data for testing
+        const languages = {
+            en: {
+                "test-title": "Language Test Page",
+                "test-description": "This is a test page to verify that language switching works correctly.",
+                "test-instructions": "Click the language buttons above to change the language of this content."
+            },
+            fr: {
+                "test-title": "Page de Test de Langue",
+                "test-description": "Ceci est une page de test pour vérifier que le changement de langue fonctionne correctement.",
+                "test-instructions": "Cliquez sur les boutons de langue ci-dessus pour changer la langue de ce contenu."
+            },
+            ar: {
+                "test-title": "صفحة اختبار اللغة",
+                "test-description": "هذه صفحة اختبار للتحقق من أن تبديل اللغة يعمل بشكل صحيح.",
+                "test-instructions": "انقر على أزرار اللغة أعلاه لتغيير لغة هذا المحتوى."
+            }
+        };
+
+        let currentLanguage = 'en';
+
+        function setLanguage(langCode) {
+            currentLanguage = langCode;
+            
+            // Update HTML attributes
+            document.documentElement.lang = langCode;
+            document.documentElement.dir = langCode === 'ar' ? 'rtl' : 'ltr';
+            
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.langCode === langCode);
+            });
+            
+            // Update content
+            updateContent();
+        }
+
+        function updateContent() {
+            const elements = document.querySelectorAll('[data-lang]');
+            const currentLangData = languages[currentLanguage];
+            
+            elements.forEach(element => {
+                const key = element.dataset.lang;
+                const translation = currentLangData[key];
+                
+                if (translation) {
+                    element.textContent = translation;
+                }
+            });
+        }
+
+        // Initialize language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const newLang = btn.dataset.langCode;
+                if (newLang !== currentLanguage) {
+                    setLanguage(newLang);
+                }
+            });
+        });
+
+        // Initialize with English
+        setLanguage('en');
+    </script>
+</body>
+</html> 
