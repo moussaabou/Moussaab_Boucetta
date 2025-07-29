@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website - Moussaab Boucetta
 
 ## Overview
@@ -131,3 +132,47 @@ The application is designed for static hosting platforms:
 **Solution**: JSON files with fetch-based loading
 **Rationale**: Easy content updates, scalable to more languages
 **Trade-offs**: Async loading required but enables better content management
+=======
+# Moussaab Boucetta - Portfolio
+
+Bienvenue sur mon portfolio personnel !
+
+## Présentation
+
+Ce projet est un portfolio web développé pour présenter mes compétences, mes projets et mon parcours professionnel.
+
+## Fonctionnalités
+
+- Présentation personnelle
+- Liste de mes compétences (langages, frameworks, outils)
+- Projets réalisés avec descriptions et liens
+- Animations et design moderne
+- Responsive (adapté aux mobiles et tablettes)
+
+## Structure du projet
+
+- `index.html` : page principale du portfolio
+- `css/` : fichiers de styles (CSS)
+- `js/` : scripts JavaScript pour les animations et l’interactivité
+- `assets/` : images et ressources graphiques
+- `data/languages.json` : données sur les langages/compétences
+
+## Installation et utilisation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone <lien-du-dépôt>
+   ```
+2. Ouvrez le fichier `index.html` dans votre navigateur.
+
+Aucune installation supplémentaire n’est requise.
+
+## Auteur
+
+[Moussaab Boucetta](https://www.linkedin.com/in/ton-profil)
+Contact : ton.email@example.com
+
+## Licence
+
+Ce projet est sous licence MIT.
+>>>>>>> ef01e9c (Modifer readme.md)
