@@ -573,7 +573,7 @@ class PortfolioApp {
             <h1 class="name">${currentLang['hero-name']}</h1>
             <p class="title">${currentLang['hero-title']}</p>
             <div class="contact-info">
-                <span>📧 moussaab.boucetta@email.com</span>
+                <span>📧 moussaabboucetta25@gmail.com</span>
                 <span>🔗 linkedin.com/in/moussaab-boucetta</span>
                 <span>👨‍💻 github.com/moussaab-boucetta</span>
             </div>
@@ -597,8 +597,8 @@ class PortfolioApp {
                 <p>${currentLang['timeline-desc-3']}</p>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">${currentLang['timeline-date-4']}</div>
-                <div class="timeline-title">${currentLang['timeline-title-4']}</div>
+                <div class="timeline-date">${currentLang['timeline-date-5']}</div>
+                <div class="timeline-title">${currentLang['timeline-title-5']}</div>
                 <p>${currentLang['timeline-desc-4']}</p>
             </div>
         </div>
