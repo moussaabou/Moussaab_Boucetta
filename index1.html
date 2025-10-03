@@ -16,13 +16,14 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
 </head>
 <body class="light-theme">
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader">
             <div class="spinner"></div>
-            <p>Loading...</p>
+            <p data-lang="loading">Loading...</p>
         </div>
     </div>
 
@@ -33,20 +34,28 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span>Moussaab Boucetta</span>
+                <span data-lang="name">Moussaab Boucetta</span>
             </div>
             
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#timeline" class="nav-link">Timeline</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" data-lang="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-lang="nav-about">About</a>
+                <a href="#skills" class="nav-link" data-lang="nav-skills">Skills</a>
+                <a href="#timeline" class="nav-link" data-lang="nav-timeline">Timeline</a>
+                <a href="#certifications" class="nav-link" data-lang="nav-certifications">Certifications</a>
+                <a href="#projects" class="nav-link" data-lang="nav-projects">Projects</a>
+                <a href="#articles" class="nav-link" data-lang="nav-articles">Articles</a>
+                <a href="#contact" class="nav-link" data-lang="nav-contact">Contact</a>
             </div>
 
             <div class="nav-controls">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang-code="en">EN</button>
+                    <button class="lang-btn" data-lang-code="fr">FR</button>
+                    <button class="lang-btn" data-lang-code="ar">AR</button>
+                </div>
+                
                 <!-- Theme Toggle -->
                 <button class="theme-toggle" id="theme-toggle">
                     <i class="fas fa-moon"></i>
@@ -66,13 +75,13 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-name">Moussaab Boucetta</h1>
-                <h2 class="hero-title">Software Engineer | Fullstack | DevOps | Tester</h2>
-                <p class="hero-quote">Crafting digital solutions with passion and precision</p>
+                <h1 class="hero-name" data-lang="hero-name">Moussaab Boucetta</h1>
+                <h2 class="hero-title" data-lang="hero-title">Software Engineer | Fullstack | DevOps | Tester</h2>
+                <p class="hero-quote" data-lang="hero-quote">Crafting digital solutions with passion and precision</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                    <button id="download-cv" class="btn btn-outline">
+                    <a href="#contact" class="btn btn-primary" data-lang="hero-contact">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary" data-lang="hero-projects">View Projects</a>
+                    <button id="download-cv" class="btn btn-outline" data-lang="download-cv">
                         <i class="fas fa-download"></i>
                         <span>Download CV</span>
                     </button>
@@ -80,7 +89,7 @@
             </div>
             <div class="hero-scroll">
                 <div class="scroll-indicator">
-                    <span>Scroll Down</span>
+                    <span data-lang="scroll-down">Scroll Down</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
@@ -90,7 +99,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-lang="about-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-wrapper">
@@ -98,23 +107,23 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="about-description">
+                    <p class="about-description" data-lang="about-description">
                         Passionate software engineer with expertise in fullstack development, DevOps practices, and quality assurance. I love building innovative solutions that make a difference.
                     </p>
                     <div class="hobbies">
-                        <h3>Hobbies & Interests</h3>
+                        <h3 data-lang="hobbies-title">Hobbies & Interests</h3>
                         <div class="hobbies-list">
                             <div class="hobby-item">
                                 <i class="fas fa-book"></i>
-                                <span>Reading</span>
+                                <span data-lang="hobby-reading">Reading</span>
                             </div>
                             <div class="hobby-item">
                                 <i class="fas fa-futbol"></i>
-                                <span>Sports</span>
+                                <span data-lang="hobby-sports">Sports</span>
                             </div>
                             <div class="hobby-item">
                                 <i class="fas fa-pen"></i>
-                                <span>Writing</span>
+                                <span data-lang="hobby-writing">Writing</span>
                             </div>
                         </div>
                     </div>
@@ -126,10 +135,10 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title" data-lang="skills-title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3 data-lang="backend-title">Backend</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -153,7 +162,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3 data-lang="frontend-title">Frontend</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -177,7 +186,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>DevOps</h3>
+                    <h3 data-lang="devops-title">DevOps</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -210,7 +219,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>AI & Machine Learning</h3>
+                    <h3 data-lang="ai-ml-title">AI & Machine Learning</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -252,7 +261,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>Other Skills</h3>
+                    <h3 data-lang="automation-seo-title">Other Skills</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -294,13 +303,13 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>Languages</h3>
+                    <h3 data-lang="languages-title">Languages</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-icon">
                                 <i class="fas fa-flag-usa"></i>
                             </div>
-                            <span>English</span>
+                            <span data-lang="english-lang">English</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="90"></div>
                             </div>
@@ -309,7 +318,7 @@
                             <div class="skill-icon">
                                 <i class="fas fa-flag"></i>
                             </div>
-                            <span>French</span>
+                            <span data-lang="french-lang">Français</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="95"></div>
                             </div>
@@ -318,13 +327,14 @@
                             <div class="skill-icon">
                                 <i class="fas fa-moon"></i>
                             </div>
-                            <span>Arabic</span>
+                            <span data-lang="arabic-lang">العربية</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -332,30 +342,20 @@
     <!-- Timeline Section -->
     <section id="timeline" class="timeline">
         <div class="container">
-            <h2 class="section-title">Timeline</h2>
+            <h2 class="section-title" data-lang="timeline-title">Timeline</h2>
             <div class="timeline-wrapper">
-                <!-- Full-Stack Developer at Media Smart -->
-                <div class="timeline-item">
+
+                <!-- Full-Stack Developer at usedShop -->
+                <!--<div class="timeline-item">
                     <div class="timeline-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Aug 2025 - Present</div>
-                        <h3>Full Stack Engineer</h3>
-                        <h4>Media Smart</h4>
-                        <p>Development and deployment of full-stack web applications with modern technologies and frameworks.</p>
-                        <ul>
-                            <li>Frontend development with React.js</li>
-                            <li>Backend development with Node.js, PHP, and FastAPI (Python)</li>
-                            <li>Database management with MySQL and PostgreSQL</li>
-                            <li>Server administration and deployment on Linux systems</li>
-                            <li>Development and optimization of the Constontic platform and Tenders-dz website</li>
-                            <li>Enhancements to ERP system and database performance optimization</li>
-                            <li>Implementation of AI solutions and process automation</li>
-                            <li>Participation in organizing Constontice Event 2025 (digital & tech conference)</li>
-                        </ul>
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3>Full-Stack Developer</h3>
+                        <p>Developed scalable web applications using React, Django, and PostgreSQL at usedShop.</p>
                     </div>
-                </div>
+                </div>-->
 
                 <!-- Freelancer -->
                 <div class="timeline-item">
@@ -368,6 +368,18 @@
                         <p>Working as a freelance developer on various web and software projects for clients worldwide.</p>
                     </div>
                 </div>
+
+                <!-- Junior Developer -->
+                <!--<div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3>Junior Developer</h3>
+                        <p>Started career in software development, focusing on backend development with Spring Boot and Django.</p>
+                    </div>
+                </div>-->
 
                 <!-- Master's Degree -->
                 <div class="timeline-item">
@@ -392,6 +404,7 @@
                         <p>Software Engineering Specialty<br>University Constantine 2</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -399,18 +412,19 @@
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title" data-lang="certifications-title">Certifications</h2>
             <div class="certifications-grid">
+
                 <div class="certification-card">
                     <div class="cert-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     <div class="cert-content">
-                        <h3>Introduction to Data and Data Science</h3>
-                        <p>365 Data Science</p>
-                        <div class="cert-date">Issued: November 11, 2024</div>
-                        <div class="cert-validity">Valid until: -</div>
-                        <a href="https://learn.365datascience.com/certificates/CC-5BC9373F21/" class="cert-verify" target="_blank">Verify Certificate</a>
+                        <h3 data-lang="cert-data-science-title">Introduction to Data and Data Science</h3>
+                        <p data-lang="cert-data-science-issuer">365 Data Science</p>
+                        <div class="cert-date" data-lang="cert-data-science-date">Issued: November 11, 2024</div>
+                        <div class="cert-validity" data-lang="cert-data-science-validity">Valid until: -</div>
+                        <a href="https://learn.365datascience.com/certificates/CC-5BC9373F21/" class="cert-verify" target="_blank" data-lang="verify-cert">Verify Certificate</a>
                     </div>
                 </div>
 
@@ -419,11 +433,11 @@
                         <i class="fab fa-microsoft"></i>
                     </div>
                     <div class="cert-content">
-                        <h3>Describe Cloud Computing</h3>
-                        <p>Microsoft Learn</p>
-                        <div class="cert-date">Completed: March 22, 2024</div>
-                        <div class="cert-validity">Module Completed</div>
-                        <a href="https://learn.microsoft.com/fr-fr/users/boucettamoussaab-3164/achievements/hyhgeaf8?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="cert-verify" target="_blank">Verify Certificate</a>
+                        <h3 data-lang="cert-cloud-computing-title">Décrire le cloud computing</h3>
+                        <p data-lang="cert-cloud-computing-issuer">Microsoft Learn</p>
+                        <div class="cert-date" data-lang="cert-cloud-computing-date">Completed: March 22, 2024</div>
+                        <div class="cert-validity" data-lang="cert-cloud-computing-validity">Module Completed</div>
+                        <a href="https://learn.microsoft.com/fr-fr/users/boucettamoussaab-3164/achievements/hyhgeaf8?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="cert-verify" target="_blank" data-lang="verify-cert">Verify Certificate</a>
                     </div>
                 </div>
 
@@ -432,11 +446,11 @@
                         <i class="fab fa-google"></i>
                     </div>
                     <div class="cert-content">
-                        <h3>Deploy Kubernetes Applications on Google Cloud</h3>
-                        <p>Google Cloud Skills Boost</p>
-                        <div class="cert-date">Earned: February 3, 2023 EST</div>
-                        <div class="cert-validity">Skill Badge Earned</div>
-                        <a href="https://www.cloudskillsboost.google/public_profiles/9423a7ba-0ac4-4505-82cd-c5ae00d2e812" class="cert-verify" target="_blank">Verify Certificate</a>
+                        <h3 data-lang="cert-kubernetes-deploy-title">Déployer des applications Kubernetes sur Google Cloud</h3>
+                        <p data-lang="cert-kubernetes-deploy-issuer">Google Cloud Skills Boost</p>
+                        <div class="cert-date" data-lang="cert-kubernetes-deploy-date">Earned: February 3, 2023 EST</div>
+                        <div class="cert-validity" data-lang="cert-kubernetes-deploy-validity">Skill Badge Earned</div>
+                        <a href="https://www.cloudskillsboost.google/public_profiles/9423a7ba-0ac4-4505-82cd-c5ae00d2e812" class="cert-verify" target="_blank" data-lang="verify-cert">Verify Certificate</a>
                     </div>
                 </div>
 
@@ -445,11 +459,11 @@
                         <i class="fab fa-google"></i>
                     </div>
                     <div class="cert-content">
-                        <h3>Kubernetes in Google Cloud</h3>
-                        <p>Google Cloud Skills Boost</p>
-                        <div class="cert-date">Earned: February 2, 2023 EST</div>
-                        <div class="cert-validity">Skill Badge Earned</div>
-                        <a href="https://www.cloudskillsboost.google/public_profiles/9423a7ba-0ac4-4505-82cd-c5ae00d2e812" class="cert-verify" target="_blank">Verify Certificate</a>
+                        <h3 data-lang="cert-kubernetes-google-title">Kubernetes dans Google Cloud</h3>
+                        <p data-lang="cert-kubernetes-google-issuer">Google Cloud Skills Boost</p>
+                        <div class="cert-date" data-lang="cert-kubernetes-google-date">Earned: February 2, 2023 EST</div>
+                        <div class="cert-validity" data-lang="cert-kubernetes-google-validity">Skill Badge Earned</div>
+                        <a href="https://www.cloudskillsboost.google/public_profiles/9423a7ba-0ac4-4505-82cd-c5ae00d2e812" class="cert-verify" target="_blank" data-lang="verify-cert">Verify Certificate</a>
                     </div>
                 </div>
             </div>
@@ -459,7 +473,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects & Portfolio</h2>
+            <h2 class="section-title" data-lang="projects-title">Projects & Portfolio</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -488,7 +502,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -497,7 +510,7 @@
                     </div>
                     <div class="project-content">
                         <h3>DriverTeachPro: A driving assessment system for driving schools based on IoT and artificial intelligence</h3>
-                        <p>Final project for obtaining the master's degree in computer science<br>DriverTeachPro is an innovative driving assessment system designed specifically for driving schools, leveraging IoT devices and artificial intelligence technologies.</p>
+                        <p>Final project for obtaining the master's degree in computer science<br>DriverTeachPro is an innovative driving assessment system designed specifically for driving schools, leveraging IoT devices and artificial intelligence technologies. </p>
                         <div class="project-tech">
                             <span class="tech-tag">Django</span>
                             <span class="tech-tag">JavaScript</span>
@@ -511,7 +524,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -520,7 +532,7 @@
                     </div>
                     <div class="project-content">
                         <h3>Web application for the management of learners and training schools</h3>
-                        <p>Final project for obtaining the bachelor's degree in computer science<br>A full-stack web application designed to manage learners, training schools, courses, and instructors.</p>
+                        <p>Final project for obtaining the bachelor's degree in computer science<br>A full-stack web application designed to manage learners, training schools, courses, and instructors. </p>
                         <div class="project-tech">
                             <span class="tech-tag">Spring Boot</span>
                             <span class="tech-tag">JavaScript</span>
@@ -536,7 +548,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -545,7 +556,9 @@
                     </div>
                     <div class="project-content">
                         <h3>ToDo List Web Application</h3>
-                        <p>A simple and efficient task management application built using Spring Boot for the backend and AngularJS for the frontend.</p>
+                        <p>
+                            A simple and efficient task management application built using Spring Boot for the backend and AngularJS for the frontend.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">Spring Boot</span>
                             <span class="tech-tag">AngularJS</span>
@@ -560,130 +573,177 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Project: NatureFlow Landing Page -->
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>NatureFlow: Landing Page</h3>
-                        <p>NatureFlow is a clean and modern landing page designed to promote eco-friendly services and nature-inspired content. Built with HTML, CSS, and JavaScript, and fully responsive for all devices.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/moussaabou/NatureFlow.git" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span>View Code</span>
-                            </a>
-                            <a href="https://moussaabou.github.io/NatureFlow/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
+    <div class="project-image">
+        <div class="project-placeholder">
+            <i class="fas fa-leaf"></i>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3>NatureFlow: Landing Page</h3>
+        <p>
+            NatureFlow is a clean and modern landing page designed to promote eco-friendly services and nature-inspired content. Built with HTML, CSS, and JavaScript, and fully responsive for all devices.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/moussaabou/NatureFlow.git" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+            </a>
+            <a href="https://moussaabou.github.io/NatureFlow/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+            </a>
+        </div>
+    </div>
                 </div>
+<!-- Project: AI Tools Hub -->
+<div class="project-card">
+    <div class="project-image">
+        <div class="project-placeholder">
+            <i class="fas fa-robot"></i>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3>AI Tools Hub</h3>
+        <p>
+            AI Tools Hub is a sleek landing page showcasing a curated list of AI tools and platforms. Built using HTML, CSS, and JavaScript, it provides users with an intuitive interface to discover and explore AI resources.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/moussaabou/AI-Tools-Hub.git" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>View Code</span>
+            </a>
+            <a href="https://moussaabou.github.io/AI-Tools-Hub/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+            </a>
+        </div>
+    </div>
+</div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Tools Hub</h3>
-                        <p>AI Tools Hub is a sleek landing page showcasing a curated list of AI tools and platforms. Built using HTML, CSS, and JavaScript, it provides users with an intuitive interface to discover and explore AI resources.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/moussaabou/AI-Tools-Hub.git" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span>View Code</span>
-                            </a>
-                            <a href="https://moussaabou.github.io/AI-Tools-Hub/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-   <!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-header">
-                <h3>Let's Connect</h3>
-                <p>I'm always open to discussing new opportunities and interesting projects. Feel free to reach out through any of the platforms below.</p>
-            </div>
-            
-            <div class="social-links-vertical">
-                <a href="https://www.linkedin.com/in/moussaab-boucetta" class="social-link-vertical" target="_blank">
-                    <div class="social-icon">
-                        <i class="fab fa-linkedin"></i>
+    <!-- Articles Section -->
+  <!--  <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title" data-lang="articles-title">Articles & Blog</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">2024-01-15</span>
+                        <span class="article-category" data-lang="category-tech">Technology</span>
                     </div>
-                    <div class="social-info">
-                        <h4>LinkedIn</h4>
-                        <p>Connect professionally</p>
-                    </div>
-                </a>
-                
-                <a href="https://github.com/moussaabou" class="social-link-vertical" target="_blank">
-                    <div class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>GitHub</h4>
-                        <p>View my projects</p>
-                    </div>
-                </a>
-                
-                <a href="mailto:Moussaabboucetta25@gmail.com" class="social-link-vertical">
-                    <div class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>Email</h4>
-                        <p>Moussaabboucetta25@gmail.com</p>
-                    </div>
-                </a>
-                
-                <a href="https://wa.me/213781106403" class="social-link-vertical" target="_blank">
-                    <div class="social-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>WhatsApp</h4>
-                        <p>+213 781 10 64 03</p>
-                    </div>
-                </a>
-            </div>
-    </div>
-</section>
+                    <h3 class="article-title" data-lang="article1-title">Modern Web Development Best Practices</h3>
+                    <p class="article-excerpt" data-lang="article1-excerpt">Exploring the latest trends and best practices in modern web development...</p>
+                    <a href="#" class="read-more" data-lang="read-more">Read More</a>
+                </article>
 
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">2024-01-10</span>
+                        <span class="article-category" data-lang="category-devops">DevOps</span>
+                    </div>
+                    <h3 class="article-title" data-lang="article2-title">Containerization with Docker: A Complete Guide</h3>
+                    <p class="article-excerpt" data-lang="article2-excerpt">Learn how to effectively use Docker for application deployment...</p>
+                    <a href="#" class="read-more" data-lang="read-more">Read More</a>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">2024-01-05</span>
+                        <span class="article-category" data-lang="category-career">Career</span>
+                    </div>
+                    <h3 class="article-title" data-lang="article3-title">The Journey of a Software Engineer</h3>
+                    <p class="article-excerpt" data-lang="article3-excerpt">Reflections on the path of continuous learning in software development...</p>
+                    <a href="#" class="read-more" data-lang="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section> --> 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-lang="contact-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-lang="contact-info-title">Let's Connect</h3>
+                    <p data-lang="contact-info-text">I'm always open to discussing new opportunities and interesting projects.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/moussaab-boucetta" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/moussaabou" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:Moussaabboucetta25@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://wa.me/213781106403" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-lang="form-name">Your Name</label>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-lang="form-email">Your Email</label>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" data-lang="form-message">Your Message</label>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span data-lang="send-message">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p>&copy; 2025 Moussaab Boucetta. All rights reserved.</p>
+                    <p>&copy; 2024 <span data-lang="name">Moussaab Boucetta</span>. <span data-lang="rights-reserved">All rights reserved.</span></p>
                 </div>
                 <div class="footer-right">
-                    <span>Made with</span>
+                    <span data-lang="made-with">Made with</span>
                     <i class="fas fa-heart"></i>
-                    <span>and coffee</span>
+                    <span data-lang="and-coffee">and coffee</span>
                 </div>
             </div>
         </div>
@@ -693,7 +753,7 @@
     <div id="success-message" class="success-message">
         <div class="success-content">
             <i class="fas fa-check-circle"></i>
-            <p>Message sent successfully!</p>
+            <p data-lang="message-sent">Message sent successfully!</p>
         </div>
     </div>
 
@@ -701,5 +761,6 @@
     <script src="js/particles-config.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>
